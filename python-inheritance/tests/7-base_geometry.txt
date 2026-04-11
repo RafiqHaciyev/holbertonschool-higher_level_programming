@@ -82,3 +82,7 @@
 ... except Exception as e:
 ...     print("[{}] {}".format(e.__class__.__name__, e))
 [TypeError] age must be an integer
+
+>>> bg.integer_validator("age", 89)
+>>> bg.integer_validator("age", 100)
+>>> bg.integer_validator("age", 1000000)
